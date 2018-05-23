@@ -10,7 +10,12 @@ window.onload = function() {
     })
 
     btnBB.addEventListener("click", function() {
-        txtBB.style.display = "block";
+        if(txtBB.style.display === 'none') {
+            txtBB.style.display = "block";
+        } else {
+            txtBB.style.display = "none";
+        }
+        
     })
 
 
